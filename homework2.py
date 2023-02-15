@@ -60,7 +60,6 @@ student_5.get_group_number()
 
 class Solution:
     def tree(self, n, c = '*'):
-        l = 2 * n - 1
         n = int(n)
         self.c = c
         while n != 0:
