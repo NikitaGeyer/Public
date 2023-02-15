@@ -60,13 +60,12 @@ student_5.get_group_number()
 
 class Solution:
     def tree(self, n, c = '*'):
-        n = int(n)
-        self.c = c
+        k = c
         while n != 0:
             print('{:^100}'.format(c))
             n -= 1
-            c = c + 2 * self.c
+            c = c + 2 * k
 
 
 tree_1 = Solution()
-tree_1.tree(int(input()))
+tree_1.tree(int(input()), input())
